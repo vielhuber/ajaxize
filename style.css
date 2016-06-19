@@ -1,0 +1,25 @@
+#loadbar {
+	position:fixed;
+	top:0;
+	left:0;
+	width:0;
+	height: 3px;
+	background-color:#000;
+	z-index:80000;
+	animation-name: loadbar;
+	animation-duration: 0.25s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+@keyframes loadbar {
+	0% {
+        width:0;
+	}
+    100% {
+        width:100%;
+    }
+}
