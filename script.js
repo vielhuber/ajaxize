@@ -18,10 +18,9 @@
 		// ...
 	}
 
-	/* ********* */
+	/* ******* */
 	/* ajaxize */
-	/* ********* */
-
+	/* ******* */
 	var preload_click = false;
 	var preload_back = false;		
 	var preload_loaded = false;		
@@ -87,17 +86,14 @@
 	}
 
 	function loadPage(href, context) {
-
 		// show fancy loading bar
 		$('#loadbar').remove();
 		$('body').append('<div id="loadbar"></div>');
-
 		// replace active states
 		$('.current-item').removeClass('current-item');
 		if( $(context).hasClass('menu-item') ) {
 			$(context).addClass('current-item');				
 		}
-
 		// next steps
 		// user has clicked, after preload has finished
 		if( preload_loaded !== false && preload_loaded == href && preload_back === false ) {
@@ -107,7 +103,6 @@
 		else if( preload_click === false ) {
 			preloadPage(href);
 		}
-
 	}
 
 	function showPage() {
